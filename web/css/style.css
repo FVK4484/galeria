@@ -1,0 +1,121 @@
+
+img.photo-user-avatar {
+    max-width: 45px;
+    height: auto;
+    border-radius: 50%;
+}
+
+body.dark {
+    background-color: #222222;
+    color: #eeeeee;
+}
+
+.gallery-container{
+    perspective: 800px;
+}
+
+.photo-image-block{
+    transition: all 0.5s;
+}
+
+div.photo-block {
+    text-align: center;
+    text-decoration-color: aliceblue;
+    border-radius: 10px;
+    background-color: #444;
+    outline: 4px solid rgb(89, 1, 70);
+    margin: 10px;
+    transition: all 0.5s;
+    transform-style: preserve-3d;
+    overflow: visible;
+
+    &:hover {
+        transform: rotateX(10deg);
+        box-shadow: 0px 0px 20px rgb(255, 0, 200), 0px 0px 10px rgb(255, 89, 219);
+        outline: 4px solid rgb(255, 171, 237);
+
+        .photo-image-block {
+            transform: translateZ(20px);
+        }
+
+        .photo-header-block{
+            transform: translateZ(40px);
+        }
+    }
+}
+
+.photo-header-block{
+    transition: all 0.5s;
+}
+
+div.photo-title {
+    font-size: 140%;
+    font-family: Arial;
+    text-decoration: underline;
+}
+
+div.photo-score {
+    font-size: 130%;
+    font-family: monospace;
+}
+
+img.photo-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+}
+
+.gallery-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 33% 33% 33%;
+}
+
+input,
+select {
+    background-color: #666666;
+    border-color: #999999;
+    color: white;
+}
+
+.input-group > label {
+    display: inline-block;
+    width: 200px;
+    text-align: right;
+}
+
+.input-group {
+    margin-bottom: 0.5em;
+}
+
+div.title-block {
+  text-align: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: #333333;
+}
+
+#title {
+  font-size: 300%;
+  text-decoration: none;
+  color: #BBBBBB;
+  font-family: sans-serif;
+  margin-bottom: 0;
+}
+
+#subtitle {
+  font-size: 120%;
+  font-style: italic;
+  color: #BBBBBB;
+  font-family: monospace;
+}
+
+div.navigation > a {
+    color: white;
+    font-size: 120%;
+    background-color: #555555;
+    font-family: monospace;
+    text-decoration: none;
+    display: inline-block;
+    min-width: 150px;
+}

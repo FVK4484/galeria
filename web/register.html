@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/utils/include.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <script src="/js/libs/bootstrap.min.js"></script>
+    <script src="js/register.js" type="module"></script>
+    <script src="js/libs/axios.min.js"></script>
+    <script src="js/header.js" type="module"></script>
+
+    
+</head>
+
+<body class="">
+    <div id="page-header"></div>
+
+
+    <div class="container">
+        <div id="errors"></div>
+        <h2>Register a new user:</h2>
+        <form id="register-form">
+            <!-- Nombre y apellido -->
+            <div class="row">
+                <div class="col-md">
+                    <div class="form-group">
+                        <label for="firstname-input">First name:</label>
+                        <input type="text" class="form-control" id="firstname-input" name="firstName"
+                            placeholder="First name">
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="form-group">
+                        <label for="lastname-input">Last name:</label>
+                        <input type="text" class="form-control" id="lastname-input" name="lastName"
+                            placeholder="Last name">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Email y teléfono -->
+            <div class="row">
+                <div class="col-md">
+                    <div class="form-group">
+                        <label for="email-input">Email:</label>
+                        <input type="email" class="form-control " id="email-input" name="email"
+                            placeholder="mail@server.com">
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="form-group">
+                        <label for="phone-input">Phone number:</label>
+                        <input type="tel" class="form-control" id="phone-input" name="telephone" placeholder="Phone">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Username y password -->
+            <div class="row">
+                <div class="col-md">
+                    <div class="form-group">
+                        <label for="username-input">Username:</label>
+                        <input type="text" class="form-control " id="username-input" name="username"
+                            placeholder="Username">
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="form-group">
+                        <label for="password-input">Password:</label>
+                        <input type="password" class="form-control" id="password-input" name="password"
+                            placeholder="password">
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="form-group">
+                        <label for="password2-input">Repeat Password:</label>
+                        <input type="password" class="form-control" id="password2-input" name="password2"
+                            placeholder="password">
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            <div class="row">
+                <div class="col-md text-center">
+                    <button type="submit" class="btn btn-primary">Register</button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+<script>
+    include("header.html", "#page-header");
+</script>
+
+</html>

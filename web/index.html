@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <script type="module" src="js/index.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/utils/include.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <script src="/js/libs/bootstrap.min.js"></script>
+    <script src="js/libs/axios.min.js"></script>
+    <script src="js/header.js" type="module"></script>
+
+</head>
+
+<body class="">
+    
+    <div id="page-header"></div>
+    <div class="container">
+        <div id="errors"></div>
+
+        <div class="row text-center">
+            <div class="col-md">
+                <h3>Recent pictures</h3>
+            </div>
+            <hr>
+        </div>
+
+        <div id="gallery"></div>
+
+    </div>
+
+
+</body>
+
+<script>
+    include("header.html", "#page-header");
+</script>
+
+</html>

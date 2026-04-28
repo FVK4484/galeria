@@ -1,0 +1,24 @@
+"use strict";
+
+import { photoswithusersAPI_auto } from "/js/api/_photoswithusers.js";
+import { galleryRenderer } from "/js/renderers/gallery.js";
+import { messageRenderer } from "/js/renderers/messages.js";
+
+async function main() {
+    loadAllPhotos();
+}
+
+async function loadAllPhotos() {
+    let galleryContainer = document.querySelector("div.container");
+    
+    try {
+        let photos = await photoswithusersAPI_auto.getAll();
+        let cardGallery = galleryRenderer.asCardGallery(photos);
+        galleryContainer.appendChild(cardGallery);
+    } catch (err) {
+        messageRenderer.showErrorMessage("Error while loading photos", err);
+    }
+}
+
+document.addEventListener("DOMContentLoaded", main);
+
